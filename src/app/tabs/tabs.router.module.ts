@@ -35,6 +35,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'mate',
+        children: [
+          {
+            path: '',
+            loadChildren: '../mate/mate.module#MatePageModule'
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

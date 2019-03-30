@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mateus Chinês</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1>Bem vindo a calculadora</h1>
+
+  <h3>Tabuada do {{n}}}</h3>
+
+  <ion-item *ngFor="let x of xs">
+      <ion-label>{{n}} vezes {{x}} é igual a</ion-label>
+      <ion-badge slot="end">{{n*x}}</ion-badge>
+    </ion-item>
+
+ 
+  <ion-button *ngFor="let i of xs" (click)="cal(i)" color="secondary">Tabuada do {{i}}</ion-button>
+  
+</ion-content>
